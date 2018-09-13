@@ -14,7 +14,8 @@ run_segment() {
 	fi
 
 	if [ -n "$cpu_user" ] && [ -n "$cpu_system" ] && [ -n "$cpu_idle" ]; then
-		echo "${cpu_user}, ${cpu_system}, ${cpu_idle}" | awk -F', ' '{printf("%5.1f,%5.1f,%5.1f",$1,$2,$3)}'
+		#echo "${cpu_user} us, ${cpu_system} sy, ${cpu_idle} id" | awk -F', ' '{printf("%5.1f,%5.1f,%5.1f",$1,$2,$3)}'
+		echo "${cpu_user} us, ${cpu_system} sy, ${cpu_idle} id"
 		return 0
 	else
 		return 1

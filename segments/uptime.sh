@@ -2,5 +2,5 @@
 
 run_segment() {
     uptime | sed 's/.*up \([^,]*\), .*/\1/'
-    return 0
+    #uptime | cut -d "," -f 3- | cut -d ":" -f2 | sed -e "s/^[ \t]*//"
 }
