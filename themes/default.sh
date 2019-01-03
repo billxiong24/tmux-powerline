@@ -40,18 +40,18 @@ fi
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		#"earthquake 3 0" \
-		"cpu 9 255" \
-		"pwd 89 211" \
+		#"cpu 9 255" \
+		#"pwd 89 211" \
 		#"macos_notification_count 29 255" \
 		#"mailcount 9 255" \
 		#"now_playing 234 37" \
 		#"load 237 167" \
 		#"tmux_mem_cpu_load 234 136" \
 		"battery 137 127" \
-		"uptime 6 0" \
-		#"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
+		#"uptime 6 0" \
+		"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"xkb_layout 125 117" \
-		"date_day 235 136" \
+		#"date_day 235 136" \
 		"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		"time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		#"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
